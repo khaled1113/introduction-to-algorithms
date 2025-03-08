@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-//[5,2,4,6,1,3]
+
 // function that applies insertion sort algorithm
 void insertionsort(int A[],int n){
     //making the main for loop for i =2 to n 
@@ -17,9 +17,13 @@ void insertionsort(int A[],int n){
             A[j+1]=A[j];
             //changing the index suppose that 
             j=j-1;
-        }
-        
-    }
+            A[j+1]=key;
+        }   
+}
+for (int i =0;i<n;i++){
+    cout<<A[i]<<" ";
+}
+
 }
 
 int main () {
